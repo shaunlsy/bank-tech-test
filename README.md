@@ -9,6 +9,19 @@ Makers Week 10 Individual Challenge
 - Ruby
 - Interact with the code via a REPL like IRB
 
+### Installation
+
+- clone this repo
+- run
+
+```bash
+> bundle install
+> rspec # to check all tests pass
+> irb
+```
+
+- Interact with the code with 'deposit', 'withdraw', 'print_bank_statement' methods.
+
 ### User stories
 
 ```
