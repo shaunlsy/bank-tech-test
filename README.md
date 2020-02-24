@@ -2,7 +2,7 @@
 
 ## Overview
 
-Makers Week 10 Individual Challenge
+[Makers Week 10 Individual Challenge](https://github.com/makersacademy/course/blob/master/individual_challenges/bank_tech_test.md)
 
 ### Application Overview
 
