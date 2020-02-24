@@ -17,7 +17,17 @@ Makers Week 10 Individual Challenge
 ```bash
 > bundle install
 > rspec # to check all tests pass
-> irb
+> irb -r ./lib/bank.rbrequire
+```
+
+- Example for acceptance criteria
+
+```bash
+> bank = Bank.new
+> bank.deposit(1000)
+> bank.deposit(2000)
+> bank.withdraw(500)
+> bank.print_statement
 ```
 
 - Interact with the code with 'deposit', 'withdraw', 'print_bank_statement' methods.
@@ -50,10 +60,10 @@ I will like to see a bank statement with specific dates and its transactions
 
 ### Requirements
 
-* You should be able to interact with your code via a REPL like IRB or the JavaScript console.  (You don't need to implement a command line interface that takes input from STDIN.)
-* Deposits, withdrawal.
-* Account statement (date, amount, balance) printing.
-* Data can be kept in memory (it doesn't need to be stored to a database or anything).
+- You should be able to interact with your code via a REPL like IRB or the JavaScript console. (You don't need to implement a command line interface that takes input from STDIN.)
+- Deposits, withdrawal.
+- Account statement (date, amount, balance) printing.
+- Data can be kept in memory (it doesn't need to be stored to a database or anything).
 
 ### Acceptance criteria
 
