@@ -30,7 +30,7 @@
 > bank.print_statement
 ```
 
-- Interact with the code with 'deposit', 'withdraw', 'print_bank_statement' methods.
+- Interact with the code with 'deposit', 'withdraw', 'print_statement' methods.
 
 ### User stories
 
