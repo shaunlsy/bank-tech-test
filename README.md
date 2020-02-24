@@ -34,6 +34,8 @@
 
 - Interact with the code with 'deposit', 'withdraw', 'print_statement' methods.
 
+#### Feature test screenshot
+
 ![](/screenshot/1.png)
 
 ### User stories
