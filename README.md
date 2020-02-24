@@ -15,6 +15,7 @@
 - run
 
 ```bash
+> cd bank-tech-test
 > bundle install
 > rspec # to check all tests pass and show the coverage from simplecov
 > rubocop # to check all tests pass
