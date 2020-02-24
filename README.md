@@ -79,3 +79,13 @@ date || credit || debit || balance
 13/01/2012 || 2000.00 || || 3000.00
 10/01/2012 || 1000.00 || || 1000.00
 ```
+
+#### In progress
+
+```
+irb -r ./lib/bank.rb
+bank = Bank.new
+bank.deposit(1000, "2012/01/03")
+bank.deposit(2000, "2012/01/04")
+bank.withdraw(500, "2012/01/05")
+```
