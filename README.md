@@ -24,9 +24,9 @@ Makers Week 10 Individual Challenge
 
 ```bash
 > bank = Bank.new
-> bank.deposit(1000)
-> bank.deposit(2000)
-> bank.withdraw(500)
+> bank.deposit(1000, "10-01-2012")
+> bank.deposit(2000, "13-01-2012")
+> bank.withdraw(500, "14-01-2012")
 > bank.print_statement
 ```
 
@@ -78,14 +78,4 @@ date || credit || debit || balance
 14/01/2012 || || 500.00 || 2500.00
 13/01/2012 || 2000.00 || || 3000.00
 10/01/2012 || 1000.00 || || 1000.00
-```
-
-#### In progress
-
-```
-irb -r ./lib/bank.rb
-bank = Bank.new
-bank.deposit(1000, "2012/01/03")
-bank.deposit(2000, "2012/01/04")
-bank.withdraw(500, "2012/01/05")
 ```
