@@ -2,6 +2,7 @@
 
 require 'time'
 require_relative 'print'
+require_relative 'transaction'
 
 # this is bank
 class Bank
@@ -12,21 +13,29 @@ class Bank
     @statement = []
   end
 
-  def deposit(amount, date = Time.now.to_s)
+  def deposit(amount, date=Time.now)
     @balance += amount
-    @date = Time.parse(date).strftime('%d/%m/%Y')
-    @statement << { date: @date, credit: amount, balance: @balance }
+
+    create_transaction(amount, nil, date)
   end
 
-  def withdraw(amount, date = Time.now.to_s)
+  def withdraw(amount, date=Time.now)
     raise 'Balance not enough to withdraw' if (@balance - amount).negative?
 
     @balance -= amount
-    @date = Time.parse(date).strftime('%d/%m/%Y')
-    @statement << { date: @date, debit: amount, balance: @balance }
+    create_transaction(nil, amount, date)
   end
 
   def print_statement
-    Print.print(@statement)
+    printer = Print.new
+    printer.print(@statement)
   end
+
+  private
+
+  def create_transaction(credit=nil, debit=nil, date)
+    transaction = Transaction.new(credit, debit, @balance, date)
+    @statement << transaction
+  end
+
 end
