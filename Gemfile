@@ -10,4 +10,5 @@ group :test do
   gem 'rspec', require: false, group: :test
   gem 'simplecov', require: false
   gem 'simplecov-console'
+  gem 'timecop'
 end
