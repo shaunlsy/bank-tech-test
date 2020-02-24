@@ -22,7 +22,7 @@ describe Bank do
     end
 
     it 'raises an error if there is not enough money to be withdrawn' do
-      expect { subject.withdraw(50_000) }.to raise_error 'Balance not enough to withdraw'
+      expect { subject.withdraw(50000) }.to raise_error 'Balance not enough to withdraw'
     end
   end
 
@@ -32,4 +32,5 @@ describe Bank do
     statement = "date || credit || debit || balance\n15/01/2012 || 1000.00 || || 1000.00\n14/01/2012 || || 2000.00 || 2000.00\n"
     expect { subject.print_statement }.to output(statement).to_stdout
   end
+
 end

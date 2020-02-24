@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'time'
+require_relative 'print'
 
 # this is bank
 class Bank
@@ -26,15 +27,6 @@ class Bank
   end
 
   def print_statement
-    puts 'date || credit || debit || balance'
-    @statement.reverse.each do |transaction|
-      if transaction.include?(:credit)
-        puts format("#{transaction[:date]} || || %.2f || %.2f",
-                    transaction[:credit], transaction[:balance])
-      else
-        puts format("#{transaction[:date]} || %.2f || || %.2f",
-                    transaction[:debit], transaction[:balance])
-      end
-    end
+    Print.print(@statement)
   end
 end

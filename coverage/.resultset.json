@@ -37,6 +37,7 @@
           1,
           2,
           null,
+          null,
           null
         ]
       },
@@ -45,6 +46,7 @@
           null,
           null,
           1,
+          1,
           null,
           null,
           1,
@@ -71,20 +73,43 @@
           null,
           1,
           1,
+          null,
+          null
+        ]
+      },
+      "/Users/student/Documents/Projects/bank-tech-test/lib/print.rb": {
+        "lines": [
+          1,
           1,
           2,
-          1,
+          2,
+          5,
+          3,
           null,
           null,
-          1,
+          2,
           null,
           null,
           null,
           null,
           null
         ]
+      },
+      "/Users/student/Documents/Projects/bank-tech-test/spec/print_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1582556023
+    "timestamp": 1582560124
   }
 }
