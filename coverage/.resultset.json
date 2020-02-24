@@ -111,8 +111,33 @@
           null,
           null
         ]
+      },
+      "/Users/student/Documents/Projects/bank-tech-test/spec/transaction_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/student/Documents/Projects/bank-tech-test/lib/transaction.rb": {
+        "lines": [
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1582560632
+    "timestamp": 1582564404
   }
 }
