@@ -6,7 +6,7 @@ require 'transaction'
 describe Print do
   let(:deposit_transaction) {Transaction.new(100, nil, 100.00, Time.now)}
   let(:withdraw_transaction) {Transaction.new(nil, 100, 100.00, Time.now)}
-  let(:statement) { [deposit_transaction, withdraw_transaction]}
+  let(:statement) { [deposit_transaction, withdraw_transaction] }
   subject { described_class.new }
 
   it 'prints out statement based on an array' do
@@ -19,12 +19,13 @@ describe Print do
 
   describe "#credit_or_debit" do
     it "returns nil if the amount is nil" do
-      expect(subject.credit_or_debit(nil)).to eq nil
+      expect(subject.input(nil)).to eq nil
     end
 
     it "returns the amount with two decimal places if the amount exists" do
-      expect(subject.credit_or_debit(1000)).to eq "1000.00"
-      expect(subject.credit_or_debit(1000.99)).to eq "1000.99"
+      expect(subject.input(1000)).to eq "1000.00"
+      expect(subject.input(1000.99)).to eq "1000.99"
     end
   end
+  
 end
