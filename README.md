@@ -32,6 +32,8 @@ Makers Week 10 Individual Challenge
 
 - Interact with the code with 'deposit', 'withdraw', 'print_bank_statement' methods.
 
+![](/screenshot/1.png)
+
 ### User stories
 
 ```
