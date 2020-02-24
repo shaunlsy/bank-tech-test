@@ -22,7 +22,7 @@ class Bank
 
   def print_statement
     puts "date || credit || debit || balance"
-    @statement.each do |transaction|
+    @statement.reverse.each do |transaction|
       if transaction.include?(:credit)
         puts "#{transaction[:date]} || || %.2f || %.2f" % [transaction[:credit], transaction[:balance]]
       else 

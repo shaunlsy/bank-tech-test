@@ -27,7 +27,7 @@ describe Bank do
   it 'prints out bank statement' do
     subject.deposit(2000, "14/01/2012")
     subject.withdraw(1000, "15/01/2012")
-    expect{ subject.print_statement }.to output("date || credit || debit || balance\n14/01/2012 || || 2000.00 || 2000.00\n15/01/2012 || 1000.00 || || 1000.00\n").to_stdout
+    expect{ subject.print_statement }.to output("date || credit || debit || balance\n15/01/2012 || 1000.00 || || 1000.00\n14/01/2012 || || 2000.00 || 2000.00\n").to_stdout
   end
 
 end
