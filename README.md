@@ -16,7 +16,8 @@
 
 ```bash
 > bundle install
-> rspec # to check all tests pass
+> rspec # to check all tests pass and show the coverage from simplecov
+> rubocop # to check all tests pass
 > irb -r ./lib/bank.rb
 ```
 
