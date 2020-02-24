@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# class to print out an array of hashes
 class Print
   def self.print(statement)
     puts 'date || credit || debit || balance'
