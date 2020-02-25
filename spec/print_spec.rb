@@ -17,15 +17,15 @@ describe Print do
     # expect(subject.print(statement))
   end
 
-  describe "#credit_or_debit" do
-    it "returns nil if the amount is nil" do
-      expect(subject.input(nil)).to eq nil
-    end
+  # describe "#credit_or_debit" do
+  #   it "returns nil if the amount is nil" do
+  #     expect(subject.input(nil)).to eq nil
+  #   end
 
-    it "returns the amount with two decimal places if the amount exists" do
-      expect(subject.input(1000)).to eq "1000.00"
-      expect(subject.input(1000.99)).to eq "1000.99"
-    end
-  end
-  
+  #   it "returns the amount with two decimal places if the amount exists" do
+  #     expect(subject.input(1000)).to eq "1000.00"
+  #     expect(subject.input(1000.99)).to eq "1000.99"
+  #   end
+  # end
+
 end
