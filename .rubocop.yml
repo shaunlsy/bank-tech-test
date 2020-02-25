@@ -9,6 +9,10 @@
 #
 # See https://github.com/rubocop-hq/rubocop/blob/master/manual/configuration.md
 
+AllCops:
+  Exclude:
+    - "lib/print.rb"
+
 Layout/LineLength:
   Exclude:
     - "spec/**/*"

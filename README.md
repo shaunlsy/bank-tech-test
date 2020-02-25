@@ -36,7 +36,7 @@
 
 #### Feature test screenshot
 
-![](/screenshot/1.png)
+![](/screenshot/2.png)
 
 ### User stories
 
