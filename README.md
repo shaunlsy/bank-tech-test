@@ -49,7 +49,7 @@ I will like to add money and update my account statement
 ```
 As a user
 So that I can withdraw money from my account
-I will like to reduce money and update my account statement
+I will like to reduce the balance and update my account statement
 ```
 
 ```
