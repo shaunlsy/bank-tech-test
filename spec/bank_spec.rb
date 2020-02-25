@@ -4,8 +4,9 @@ require 'bank'
 
 describe Bank do
   subject { described_class.new }
+  let(:printer){ Print.new }
 
-  it 'has a balance of zero' do
+  it 'has a initial balance of zero' do
     expect(subject.balance).to eq 0
   end
 
@@ -29,8 +30,7 @@ describe Bank do
   it 'prints out bank statement' do
     subject.deposit(2000, '14/01/2012')
     subject.withdraw(1000, '15/01/2012')
-    p subject.print_statement
     statement = "date || credit || debit || balance\n15/01/2012 || || 1000.00 || 1000.00\n14/01/2012 || 2000.00 || || 2000.00\n"
-    expect { subject.print_statement }.to output(statement).to_stdout
+    expect { subject.print_statement(printer) }.to output(statement).to_stdout
   end
 end

@@ -13,21 +13,20 @@ class Bank
     @statement = []
   end
 
-  def deposit(amount, date = Time.now)
+  def deposit(amount, date = Time.now.to_s)
     @balance += amount
 
     create_transaction(Time.parse(date), amount, nil)
   end
 
-  def withdraw(amount, date = Time.now)
+  def withdraw(amount, date = Time.now.to_s)
     raise 'Balance not enough to withdraw' if (@balance - amount).negative?
 
     @balance -= amount
     create_transaction(Time.parse(date), nil, amount)
   end
 
-  def print_statement
-    printer = Print.new
+  def print_statement(printer = Print.new)
     printer.print(@statement)
   end
 
