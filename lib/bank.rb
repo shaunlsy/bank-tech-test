@@ -27,8 +27,7 @@ class Bank
   end
 
   def print_statement
-    printer = Print.new
-    printer.print(@statement)
+    printer = Print.print(@statement)
   end
 
   private
