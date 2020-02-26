@@ -3,7 +3,7 @@
 # class to print out an array of hashes
 class Print
   def print(statement)
-    puts 'date || credit || debit || balance'
+    puts "date || credit || debit || balance"
     output(statement)
   end
 

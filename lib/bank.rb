@@ -4,7 +4,7 @@ require 'time'
 require_relative 'print'
 require_relative 'transaction'
 
-# bank class for depost and withdraw money
+# bank class for deposit and withdraw money
 class Bank
   attr_reader :balance, :date, :statement
 
